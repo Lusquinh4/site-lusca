@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@media only screen and (max-width: 600px) {
+
+    /* Estilos para telas menores que 600px de largura */
+    body {
+        font-size: 14px;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+    }
+
+    #interface {
+        width: 90%;
+        /* Ajusta a largura para 90% */
+        margin: 20px auto;
+        /* Centraliza o contêiner */
+        overflow-y: scroll;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    iframe#info {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+    /* Estilos para telas entre 601px e 768px de largura */
+    body {
+        font-size: 16px;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+    }
+
+    #interface {
+        width: 80%;
+        /* Ajusta a largura para 80% */
+        margin: 20px auto;
+        overflow-y: scroll;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    /* Estilos para telas maiores que 769px de largura */
+    body {
+        font-size: 18px;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+    }
+
+    #interface {
+        width: 50%;
+        /* Ajusta a largura para 50% */
+        margin: 20px auto;
+        /* Centraliza o contêiner */
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        width: auto;
+    }
+}
+/********************************/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    /* Permite rolagem do conteúdo */
+}
+
+h2 {
+    font-weight: 550;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(18, 2, 243, 0.521);
+}
+
+h1{
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 450;
+}
+
+/* Texto principal */
+#texto-principal {
+    padding: 10px;
+    width: auto;
+    min-height: 100%;
+    /* Garante que o contêiner ocupe pelo menos a altura total */
+    box-sizing: border-box;
+    /* Inclui padding e borda no cálculo da largura e altura */
+}
+
+#texto-principal p {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 0 20px 15px 20px;
+    font-weight: 600;
+}
+
+#texto-principal h3 {
+    padding: 10px;
+    text-align: center;
+    color: #1202f3a6;
+    font-weight: 800;
+    font-size: 17pt;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#texto-principal h2 {
+    text-align: center;
+    color: #1202f3a6;
+    font-size: 20pt;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            text-align: center;
+            margin: 0 auto;
+            align-content: center;
+        }
+    </style>
+</head>
+<body><div class="container">
+    <h2 style="text-align: center;">Fala man</h2><br>
+    <span id="texto" style="text-align: center; display: none;"><h1>Se fosse fácil vc n seria o único fazendo isso</h1></span><br>
+    <button onclick="mostrarEsconder()" id="teste" style="margin: 0 auto;">Mostrar/Esconder resultado</button>
+</div>
+
+<script>
+    function mostrarEsconder(){
+         var span = document.getElementById("texto")
+
+         if (span.style.display == "none" || span.style.display == "") {
+            span.style.display = "block"
+         } else {
+            span.style.display = "none"
+         }
+         }
+</script>
+</body>
+</html>
